@@ -16,7 +16,7 @@ function init() {
 
   function handleHornChange(event) {
     const selectedHorn = event.target.value;
-    // Set the correct image
+    // Sets the correct image
     if (selectedHorn === 'air-horn') {
       imageElement.src = 'assets/images/air-horn.svg';
     } else if (selectedHorn === 'car-horn') {
@@ -27,7 +27,7 @@ function init() {
       imageElement.src = 'assets/images/no-image.png';
     }
 
-    // Set the correct audio sound file
+    // Sets the correct audio sound file
     audioElement.src = `assets/audio/${selectedHorn}.mp3`;
   }
 
@@ -44,7 +44,7 @@ function init() {
       document.querySelector("#volume-controls img").src = 'assets/icons/volume-level-0.svg';
     }
 
-    // Set the corresponding volume for the audio element
+    // Sets the corresponding volume for the audio element
     audioElement.volume = volume / 100;
   }
 
@@ -52,7 +52,7 @@ function init() {
     const selectedHorn = hornDropdown.value;
     const volume = volumeSlider.value;
 
-    // Play the corresponding sound for the selected horn at the specified volume
+    // Plays the corresponding sound for the selected horn at the specified volume
     //audioElement.play();
 
     if (selectedHorn === 'party-horn') {
