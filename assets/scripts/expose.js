@@ -50,7 +50,6 @@ function init() {
 
   function playSound() {
     const selectedHorn = hornDropdown.value;
-    const volume = volumeSlider.value;
 
     // Plays the corresponding sound for the selected horn at the specified volume
     //audioElement.play();
